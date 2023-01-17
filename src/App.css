@@ -1,38 +1,96 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+
+.tytform{
+  width: 340px;
+  padding: 1px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tytform h1{
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.tytform input[type = "number"],
+.tytform input[type = "text"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tytform input[type = "number"]:hover,
+.tytform input[type = "text"]:hover{
+  border-color: #61d6e6;
 }
+
+.tytform input[type = "number"]:focus,
+.tytform input[type = "text"]:focus{
+  width: 280px;
+  border-color: #e661aa;
+}
+
+.tytform button[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.tytform button[type = "submit"]:hover{
+  background: #2ecc71;
+  color: #ffffff;
+}
+
+h2 {
+  color: aquamarine;
+  text-transform: uppercase;
+  
+}
+
+h4 {
+  color: coral;
+}
+
+h5 {
+  color: #5e3438;
+}
+
+h6 {
+  color: goldenrod;
+}
+
+
+
+
+
+
+
